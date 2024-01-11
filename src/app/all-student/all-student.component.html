@@ -1,0 +1,28 @@
+
+<button type="button" (click)="addStudent()">Add Student</button>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>PhoneNo</th>
+            <th>Delete</th>
+            <th>Edit</th>
+            <th>View</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of allStudents">
+            <td>{{student.id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.address}}</td>
+            <td>{{student.gender}}</td>
+            <td>{{student.phoneno}}</td>
+            <td><button type="button" (click)="delete(student.id)">Remove</button></td>
+            <td><button type="button" (click)="editStudent(student.id)">Edit</button></td>
+            <td><button type="button" (click)="viewStudent(student.id)">View</button></td>
+        </tr>
+    </tbody>
+</table>

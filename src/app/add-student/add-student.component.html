@@ -1,0 +1,17 @@
+<!-- Template driven form -->
+
+<h2>Add Student</h2>
+<form #myForm="ngForm" (ngSubmit)="addStudentDetail(myForm)">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" ngModel #sName="ngModel" required/><br><br>
+        <div *ngIf="!sName.valid && sName.touched" style="color: red;">Name is required </div>
+    </div>
+    <label for="address">Address</label>
+    <input type="text" name="address" ngModel #sAddress="ngModel" required/><br><br>
+    <label for="gender">Gender</label>
+    <input type="text" name="gender" ngModel #sGender="ngModel" required/><br><br>
+    <label for="phone">PhoneNo</label>
+    <input type="tel" name="phone" ngModel #sPhone="ngModel" required/><br><br>
+    <button type="submit">Submit</button>
+</form>

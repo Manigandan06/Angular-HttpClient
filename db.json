@@ -1,0 +1,32 @@
+{
+  "Student": [
+    {
+      "id": 1,
+      "name": "vijay",
+      "address": "chennai",
+      "gender": "Male",
+      "phoneno": 9372847843
+    },
+    {
+      "id": 2,
+      "name": "ajith",
+      "address": "vellor",
+      "gender": "Male",
+      "phoneno": 9372847843
+    },
+    {
+      "id": 3,
+      "name": "surya",
+      "address": "kanchepuram",
+      "gender": "Male",
+      "phoneno": 8972847843
+    },
+    {
+      "id": 4,
+      "name": "mani",
+      "address": "Arni",
+      "gender": "male",
+      "phoneno": "8492892844"
+    }
+  ]
+}
